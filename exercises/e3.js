@@ -16,8 +16,17 @@
 
 // Your code goes here...
 
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for(let i=0; i<arr.length+1; i++) {
+    if (arr[i] > val1 && arr[i] < val2) {
+      return true;
+    }
+  }
+  return false;
+}
 
-
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5)
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10)
 
 /**
  * ====================================================
@@ -36,9 +45,30 @@
 
 // Your code goes here...
 
+function getValueWithConditionOne(num1, num2) {
+  if (num1 === 40 & num2 === 40) {
+    return num1 + num2;
+  } else {
+    return 2*(num1 + num2);
+  }
+}
+getValueWithConditionOne(40, 40);
+getValueWithConditionOne(20, 30);
 
-
-
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1 === 40 & num2 === 40) {
+    return num1 + num2;
+  } else {
+    return 2*(num1 + num2);
+  }
+}
+const getValueWithConditionThree = function(num1, num2) {
+  if (num1 === 40 & num2 === 40) {
+    return num1 + num2;
+  } else {
+    return 2*(num1 + num2);
+  }
+}
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
 // If the test has all tests passed, switch to the next exercise file
